@@ -28,6 +28,7 @@ class News_model extends CI_Model {
   	$data = array(
   		'title' => $this->input->post('title'),
   		'slug' => $slug,
+  		// post protects from attacks
   		'text' => $this->input->post('text')
   	);
 
